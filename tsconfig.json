@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"alwaysStrict": true,
+		"allowJs": false,
+		"noImplicitAny": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "lib"
+	},
+	"include": ["sources/**/*.ts"]
+}

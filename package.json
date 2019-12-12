@@ -1,0 +1,15 @@
+{
+	"name": "project-football",
+	"version": "0.1.0",
+	"description": "Hobby project about football statistics",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Matthieu Bauny",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^12.12.17",
+		"typescript": "^3.7.3"
+	}
+}

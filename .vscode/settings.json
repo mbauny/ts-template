@@ -1,0 +1,15 @@
+{
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"telemetry.enableTelemetry": false,
+	"telemetry.enableCrashReporter": false,
+	"files.insertFinalNewline": true,
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.format.semicolons": "remove",
+	"typescript.format.semicolons": "remove",
+	"typescript.surveys.enabled": false,
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true
+}
