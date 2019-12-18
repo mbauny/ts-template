@@ -6,7 +6,7 @@
 		"allowJs": false,
 		"noImplicitAny": true,
 		"module": "commonjs",
-		"moduleResolution": "node",
+		"moduleResolution": "Node",
 		"sourceMap": true,
 		"outDir": "lib"
 	},
