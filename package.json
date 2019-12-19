@@ -8,15 +8,23 @@
 	},
 	"main": "dist/index.js",
 	"scripts": {
-		"test": "jest"
+		"test": "jest",
+		"webpack": "webpack",
+		"debug": "node --inspect --inspect-brk ./dist/bundle.js",
+		"dev.build": "npm run webpack -- --mode development",
+		"dev.debug": "npm run debug -- --mode development",
+		"prod.build": "npm run webpack -- --mode production"
 	},
 	"author": "Matthieu Bauny",
 	"license": "ISC",
 	"devDependencies": {
-		"@types/jest": "^24.0.23",
-		"@types/node": "^12.12.17",
+		"@types/jest": "^24.0.24",
+		"@types/node": "^12.12.21",
 		"jest": "^24.9.0",
 		"ts-jest": "^24.2.0",
-		"typescript": "^3.7.3"
+		"ts-loader": "^6.2.1",
+		"typescript": "^3.7.3",
+		"webpack": "^4.41.4",
+		"webpack-cli": "^3.3.10"
 	}
 }

@@ -8,7 +8,7 @@
 		"module": "commonjs",
 		"moduleResolution": "Node",
 		"sourceMap": true,
-		"outDir": "lib"
+		"outDir": "dist"
 	},
 	"include": ["sources/**/*.ts"]
 }
