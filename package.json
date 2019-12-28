@@ -1,9 +1,9 @@
 {
-	"name": "theplaybook",
+	"name": "ts-template",
 	"version": "0.1.0",
-	"description": "The PlayBook is a hobby project about football statistics",
+	"description": "A template for TypeScript projects",
 	"author": "Matthieu Bauny",
-	"license": "ISC",
+	"license": "MIT",
 	"engines": {
 		"node": ">=11.0.0",
 		"npm": ">=6.11.0"
