@@ -5,6 +5,7 @@
 		"alwaysStrict": true,
 		"allowJs": false,
 		"noImplicitAny": true,
+		"noUnusedParameters": true,
 		"module": "commonjs",
 		"moduleResolution": "Node",
 		"sourceMap": true,
