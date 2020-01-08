@@ -11,7 +11,7 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"test": "jest",
-		"webpack": "webpack",
+		"webpack": "webpack --config ./build/webpack/webpack.config.js",
 		"debug": "node --inspect --inspect-brk ./dist/bundle.js",
 		"dev.build": "npm run webpack -- --mode development",
 		"dev.debug": "npm run debug -- --mode development",
