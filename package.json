@@ -12,7 +12,7 @@
 	"scripts": {
 		"test": "jest",
 		"webpack": "webpack --config ./build/webpack/webpack.config.js",
-		"debug": "node --inspect --inspect-brk ./dist/bundle.js",
+		"debug": "node --inspect --inspect-brk ./dist/index.js",
 		"dev.build": "npm run webpack -- --env.mode development",
 		"dev.debug": "npm run debug -- --mode development",
 		"prod.build": "npm run webpack -- --env.mode production"
