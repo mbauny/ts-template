@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const merge = require('webpack-merge')
 
 const commonConfig = {
@@ -18,7 +19,8 @@ const commonConfig = {
 	output: {
 		filename: 'index.js',
 		path: path.resolve(__dirname, './../../dist')
-	}
+	},
+	plugins: [new webpack.ProgressPlugin()]
 }
 
 module.exports = function(env) {
