@@ -11,5 +11,6 @@
 	"prettier.semi": false,
 	"prettier.singleQuote": true,
 	"prettier.tabWidth": 4,
-	"prettier.useTabs": true
+	"prettier.useTabs": true,
+	"eslint.enable": true
 }
