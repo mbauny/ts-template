@@ -1,4 +1,4 @@
-name: Run Jest test suite
+name: Run Jest test suite on PR to Master
 
 on:
     pull_request:
