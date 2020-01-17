@@ -1,4 +1,4 @@
-name: Run Jest test suite on PR to Master
+name: Run test suite on PR to Master
 
 on:
     pull_request:
@@ -19,10 +19,9 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: ${{ matrix.node-version }}
-            - name: npm install, build, and test
+            - name: npm run test
               run: |
                   npm ci
-                  npm run build --if-present
                   npm test
               env:
                   CI: true
