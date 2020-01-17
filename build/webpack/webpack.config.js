@@ -23,14 +23,14 @@ const commonConfig = {
 	plugins: [new webpack.ProgressPlugin()]
 }
 
-module.exports = function(env = { mode: 'production' }) {
+module.exports = function(env = { mode: 'prod' }) {
 	let complementConfig = {}
 	switch (env.mode) {
 		default:
-		case 'production':
+		case 'prod':
 			complementConfig = require('./webpack.prod.js')
 			break
-		case 'development':
+		case 'dev':
 			complementConfig = require('./webpack.dev.js')
 			break
 	}
