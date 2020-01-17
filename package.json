@@ -13,7 +13,7 @@
 		"test": "jest",
 		"webpack": "webpack --config ./build/webpack/webpack.config.js",
 		"debug": "node --inspect --inspect-brk ./dist/index.js",
-		"dev.build": "npm run webpack -- --env.mode development",
+		"dev.build": "npm run webpack -- --env.mode dev",
 		"dev.debug": "npm run debug -- --mode development",
 		"prod.build": "npm run webpack",
 		"lint": "eslint sources/**/*.ts --config dev/eslint/.eslintrc.json --ignore-path dev/eslint/.eslintignore"
