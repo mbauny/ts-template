@@ -4,6 +4,10 @@
 	"description": "A template for TypeScript projects",
 	"author": "Matthieu Bauny",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mbauny/ts-template.git"
+	},
 	"engines": {
 		"node": ">=11.0.0",
 		"npm": ">=6.11.0"
