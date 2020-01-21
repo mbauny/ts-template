@@ -1,5 +1,7 @@
+const path = require('path')
+
 module.exports = {
-	roots: ['<rootDir>/sources'],
+	rootDir: path.resolve(__dirname, '../../sources/'),
 	moduleFileExtensions: ['ts', 'js'],
 	testEnvironment: 'node',
 	testRegex: '/tests/(.*).test.ts',
