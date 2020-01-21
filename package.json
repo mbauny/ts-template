@@ -10,7 +10,7 @@
 	},
 	"main": "dist/index.js",
 	"scripts": {
-		"test": "jest",
+		"test": "jest --config=./dev/jest/jest.config.js",
 		"webpack": "webpack --config ./build/webpack/webpack.config.js",
 		"debug": "node --inspect --inspect-brk ./dist/index.js",
 		"dev.build": "npm run webpack -- --env.mode dev",
