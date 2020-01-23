@@ -30,7 +30,7 @@ describe('tools', () =>
 		test('zero number', () =>
 		{
 			const value = 0
-			const generated = isDefined(value)
+			const generated = isDefined(0)
 			const expected = true
 			expect(generated).toEqual(expected)
 
@@ -39,7 +39,7 @@ describe('tools', () =>
 		test('non-zero number', () =>
 		{
 			const value = 42
-			const generated = isDefined(value)
+			const generated = isDefined(42)
 			const expected = true
 			expect(generated).toEqual(expected)
 
