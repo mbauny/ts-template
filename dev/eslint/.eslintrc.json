@@ -13,5 +13,22 @@
 		"node": true,
 		"jest": true
 	},
-	"extends": "eslint:recommended"
+	"extends": "eslint:recommended",
+	"rules": {
+		// Possible Errors
+		"no-dupe-else-if": "error",
+		// Best Practices
+		"default-case": "error",
+		"eqeqeq": "error",
+		"no-invalid-this": "error",
+		"no-magic-numbers": "error",
+		"no-param-reassign": "error",
+		"no-shadow": "error",
+		"no-use-before-define": "error",
+		// Stylistic Issues
+		"quotes": ["error", "single"],
+		"no-var": "error",
+		"prefer-const": "warn",
+		"prefer-template": "warn"
+	}
 }
