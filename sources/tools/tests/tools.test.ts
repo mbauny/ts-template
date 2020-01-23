@@ -1,8 +1,8 @@
 import { isDefined } from '../tools'
 
-describe(`tools`, () =>
+describe('tools', () =>
 {
-	describe(`isDefined`, () =>
+	describe('isDefined', () =>
 	{
 		test('undefined', () =>
 		{
@@ -29,7 +29,8 @@ describe(`tools`, () =>
 
 		test('zero number', () =>
 		{
-			const generated = isDefined(0)
+			const value = 0
+			const generated = isDefined(value)
 			const expected = true
 			expect(generated).toEqual(expected)
 
@@ -37,7 +38,8 @@ describe(`tools`, () =>
 
 		test('non-zero number', () =>
 		{
-			const generated = isDefined(42)
+			const value = 42
+			const generated = isDefined(value)
 			const expected = true
 			expect(generated).toEqual(expected)
 
