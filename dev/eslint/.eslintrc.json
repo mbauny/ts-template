@@ -29,6 +29,7 @@
 		"quotes": ["error", "single"],
 		"no-var": "error",
 		"prefer-const": "warn",
-		"prefer-template": "warn"
+		"prefer-template": "warn",
+		"comma-dangle": ["error", "always-multiline"]
 	}
 }
