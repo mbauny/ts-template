@@ -15,6 +15,8 @@
 	},
 	"extends": "eslint:recommended",
 	"ignorePatterns": [
+		"build/",
+		"dev/",
 		"dist/", // generated files
 		"**/*.d.ts" // TS declaration files
 	],
