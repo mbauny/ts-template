@@ -14,6 +14,10 @@
 		"jest": true
 	},
 	"extends": "eslint:recommended",
+	"ignorePatterns": [
+		"dist/", // generated files
+		"**/*.d.ts" // TS declaration files
+	],
 	"rules": {
 		// Possible Errors
 		"no-dupe-else-if": "error",
