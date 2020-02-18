@@ -15,9 +15,8 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"test": "jest --config=./dev/jest/jest.config.js",
-		"webpack": "webpack --config ./build/webpack/webpack.config.js",
-		"build.dev": "npm run webpack -- --env.mode dev",
-		"build.prod": "npm run webpack",
+		"build.dev": "npm run build.prod -- --env.mode dev",
+		"build.prod": "webpack --config ./build/webpack/webpack.config.js",
 		"lint": "eslint sources/**/*.ts --config dev/eslint/.eslintrc.json"
 	},
 	"devDependencies": {
