@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const commonConfig = {
 	entry: path.resolve(__dirname, '../../sources/index.ts'),
@@ -20,7 +21,7 @@ const commonConfig = {
 		filename: 'index.js',
 		path: path.resolve(__dirname, './../../dist')
 	},
-	plugins: [new webpack.ProgressPlugin()]
+	plugins: [new webpack.ProgressPlugin(), new CleanWebpackPlugin()]
 }
 
 module.exports = function(env = { mode: 'prod' }) {
