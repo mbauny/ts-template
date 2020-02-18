@@ -24,16 +24,13 @@ const commonConfig = {
 }
 
 module.exports = function(env = { mode: 'prod' }) {
-	let complementConfig = {}
 	switch (env.mode) {
 		default:
 		case 'prod':
-			complementConfig = require('./webpack.prod.js')
-			break
+			const prodConfig = require('./webpack.prod.js')
+			return merge(commonConfig, prodConfig)
 		case 'dev':
-			complementConfig = require('./webpack.dev.js')
-			break
+			const devConfig = require('./webpack.dev.js')
+			return merge(commonConfig, devConfig)
 	}
-
-	return merge(commonConfig, complementConfig)
 }
