@@ -3,8 +3,10 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
+const rootDir = path.resolve(__dirname, '../../')
+
 const commonConfig = {
-	entry: path.resolve(__dirname, '../../sources/index.ts'),
+	entry: path.join(rootDir, 'sources/index.ts'),
 	module: {
 		rules: [
 			{
@@ -19,7 +21,7 @@ const commonConfig = {
 	},
 	output: {
 		filename: 'index.js',
-		path: path.resolve(__dirname, './../../dist')
+		path: path.join(rootDir, 'dist')
 	},
 	plugins: [new webpack.ProgressPlugin(), new CleanWebpackPlugin()]
 }
