@@ -1,16 +1,8 @@
 {
 	"editor.formatOnSave": true,
-	"editor.insertSpaces": false,
-	"telemetry.enableTelemetry": false,
-	"telemetry.enableCrashReporter": false,
+	"eslint.enable": true,
 	"files.insertFinalNewline": true,
-	"javascript.preferences.quoteStyle": "single",
-	"javascript.format.semicolons": "remove",
-	"typescript.format.semicolons": "remove",
-	"typescript.surveys.enabled": false,
-	"prettier.semi": false,
-	"prettier.singleQuote": true,
-	"prettier.tabWidth": 4,
-	"prettier.useTabs": true,
-	"eslint.enable": true
+	"prettier.configPath": "dev/prettier/.prettierrc",
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false
 }
