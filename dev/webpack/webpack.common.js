@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
@@ -26,14 +27,17 @@ const commonConfig = {
 	plugins: [new webpack.ProgressPlugin(), new CleanWebpackPlugin()]
 }
 
-module.exports = function(env = { mode: 'prod' }) {
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+module.exports = async function (env = { mode: 'prod' }) {
 	switch (env.mode) {
 		default:
-		case 'prod':
+		case 'prod': {
 			const prodConfig = require('./webpack.prod.js')
 			return merge(commonConfig, prodConfig)
-		case 'dev':
+		}
+		case 'dev': {
 			const devConfig = require('./webpack.dev.js')
 			return merge(commonConfig, devConfig)
+		}
 	}
 }
