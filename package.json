@@ -17,7 +17,7 @@
 		"test": "jest --config=./dev/jest/jest.config.js",
 		"build.dev": "npm run build.prod -- --env.mode dev",
 		"build.prod": "webpack --config ./dev/webpack/webpack.common.js",
-		"lint": "eslint sources/**/*.ts --config dev/eslint/.eslintrc.json"
+		"lint": "eslint . --config dev/eslint/.eslintrc.json"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.9.1",

@@ -15,7 +15,6 @@
 	},
 	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
 	"ignorePatterns": [
-		"dev/",
 		"dist/", // generated files
 		"**/*.d.ts" // TS declaration files
 	],
@@ -35,6 +34,7 @@
 		"no-var": "error",
 		"prefer-const": "warn",
 		"prefer-template": "warn",
-		"comma-dangle": ["error", "always-multiline"]
+		"comma-dangle": ["error", "never"],
+		"semi": ["error", "never"]
 	}
 }
