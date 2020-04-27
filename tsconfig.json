@@ -7,7 +7,7 @@
 		"allowJs": false,
 		"noImplicitAny": true,
 		"noUnusedParameters": true,
-		"module": "commonjs",
+		"module": "ESNext",
 		"moduleResolution": "Node",
 		"sourceMap": true,
 		"outDir": "dist"
