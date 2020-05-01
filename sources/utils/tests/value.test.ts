@@ -1,6 +1,6 @@
-import { isDefined } from '../tools'
+import { isDefined, isNull } from '../value'
 
-describe('tools', () => {
+describe('utils', () => {
 	describe('isDefined', () => {
 		test('undefined', () => {
 			const generated = isDefined(undefined)
@@ -55,6 +55,22 @@ describe('tools', () => {
 		test('non-null object', () => {
 			const generated = isDefined({})
 			const expected = true
+			expect(generated).toEqual(expected)
+		})
+	})
+})
+
+describe('utils', () => {
+	describe('isNull', () => {
+		test('null object', () => {
+			const generated = isNull(null)
+			const expected = true
+			expect(generated).toEqual(expected)
+		})
+
+		test('non-null object', () => {
+			const generated = isNull({})
+			const expected = false
 			expect(generated).toEqual(expected)
 		})
 	})
