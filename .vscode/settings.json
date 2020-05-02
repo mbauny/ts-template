@@ -2,7 +2,7 @@
 	"editor.formatOnSave": true,
 	"eslint.enable": true,
 	"files.insertFinalNewline": true,
-	"prettier.configPath": "dev/prettier/.prettierrc",
+	"prettier.configPath": "tools/prettier/.prettierrc",
 	"telemetry.enableCrashReporter": false,
 	"telemetry.enableTelemetry": false
 }

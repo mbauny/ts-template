@@ -8,7 +8,7 @@
 			"program": "${workspaceFolder}/node_modules/jest/bin/jest",
 			"console": "integratedTerminal",
 			"sourceMaps": true,
-			"args": ["--config", "${workspaceFolder}/dev/jest/jest.config.js", "--runTestsByPath", "${relativeFile}"]
+			"args": ["--config", "${workspaceFolder}/tools/jest/jest.config.js", "--runTestsByPath", "${relativeFile}"]
 		}
 	]
 }

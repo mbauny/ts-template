@@ -14,11 +14,11 @@
 	},
 	"main": "dist/index.js",
 	"scripts": {
-		"test": "jest --config=dev/jest/jest.config.js",
+		"test": "jest --config=tools/jest/jest.config.js",
 		"build.dev": "npm run build.prod -- --env.mode dev",
-		"build.prod": "webpack --config dev/webpack/webpack.common.js",
-		"lint": "eslint . --config dev/eslint/.eslintrc.json",
-		"fmt": "prettier . --write --config dev/prettier/.prettierrc"
+		"build.prod": "webpack --config tools/webpack/webpack.common.js",
+		"lint": "eslint . --config tools/eslint/.eslintrc.json",
+		"fmt": "prettier . --write --config tools/prettier/.prettierrc"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.9.1",
@@ -38,6 +38,6 @@
 	},
 	"dependencies": {},
 	"eslintConfig": {
-		"extends": "./dev/eslint/.eslintrc.json"
+		"extends": "./tools/eslint/.eslintrc.json"
 	}
 }
