@@ -1,16 +1,17 @@
 {
 	"compilerOptions": {
-		"target": "ESNext",
-		"lib": ["ESNext"],
-		"strict": true,
-		"alwaysStrict": true,
 		"allowJs": false,
-		"noImplicitAny": true,
-		"noUnusedParameters": true,
+		"alwaysStrict": true,
+		"esModuleInterop": true,
+		"lib": ["ESNext"],
 		"module": "ESNext",
 		"moduleResolution": "Node",
+		"noImplicitAny": true,
+		"noUnusedParameters": true,
+		"outDir": "dist",
 		"sourceMap": true,
-		"outDir": "dist"
+		"strict": true,
+		"target": "ESNext"
 	},
 	"include": ["sources/**/*.ts"]
 }
