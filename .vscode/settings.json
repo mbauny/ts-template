@@ -1,6 +1,5 @@
 {
 	"editor.formatOnSave": true,
-	"eslint.enable": true,
 	"files.insertFinalNewline": true,
 	"prettier.configPath": "config/prettier/.prettierrc",
 	"telemetry.enableCrashReporter": false,

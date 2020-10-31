@@ -39,5 +39,8 @@
 	"dependencies": {},
 	"eslintConfig": {
 		"extends": "./config/eslint/.eslintrc.json"
+	},
+	"prettier": {
+		"config-file-path": "./config/prettier/.prettierrc"
 	}
 }
